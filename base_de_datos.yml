@@ -1,0 +1,80 @@
+categorias
+id
+nombre
+categoria_padre
+categoria_hija
+
+Proveedor
+id
+nombre
+razon_social
+ruc
+telefono
+nombre_contacto
+idpais
+
+Marca 
+id
+nombre
+
+
+
+Medida
+id
+nombre
+
+Pais
+idpais
+nombre
+
+Moneda
+id
+nombre
+
+Productos
+tiene un identificador
+un producto tiene un nombre                       ejemplo bola de lomo
+un producto tiene una marca                       ejemplo newland
+un producto tiene una categoria                   ejemplo carne magra
+un producto tiene una unidad de medida            ejemplo kilos
+un producto tiene un costo                        ejemplo  50mil el kilo
+un producto tiene un tipo_iva
+un producto tiene proveedor
+
+tarjeta
+id
+nombre
+numero
+vencimiento
+cvv
+banco_emisor
+tipo
+
+Cliente
+id 
+nombre
+ruc
+razon social
+tarjeta_asociada
+
+Venta
+tiene un num_factura
+tiene una fecha
+tiene un tipo_pago
+cliente
+tiene muchos productos
+
+
+
+
+
+
+nombre molida
+marca newland
+categoria carne
+unidad de medida unidad
+costo  55mil
+
+
+nombre coca cola
+marca coca cola
