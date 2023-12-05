@@ -51,4 +51,20 @@ rails s
 
 Puedes encontrar el esquema de la base de datos en el siguiente enlace: [Esquema UML](https://lucid.app/lucidchart/09b8131e-e3f0-471e-aef0-06d6c1125b2d/edit?invitationId=inv_14e6dc7b-76a0-482d-a866-74725871f28c)
 
+![Esquema png](./ERD%20LOMI.png)
 
+Para acceder a la consola de rails ejecutamos 
+
+```
+rails c
+```
+Una vez dentro podemos ejecutar los siguientes Querys
+
+Mostrar Clientes
+```
+Cliente.first
+Cliente.first.cards
+Cliente.first.purchases
+
+```
+Mostrar 
