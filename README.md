@@ -49,31 +49,6 @@ rails s
 
 ## Esquema de la Base de Datos
 
-Puedes encontrar el esquema de la base de datos en el siguiente enlace: 
+Puedes encontrar el esquema de la base de datos en el siguiente enlace: [Esquema UML](https://lucid.app/lucidchart/09b8131e-e3f0-471e-aef0-06d6c1125b2d/edit?invitationId=inv_14e6dc7b-76a0-482d-a866-74725871f28c)
 
-## Rutas Activas
 
-* Ruta para el inicio de sesión de administrador: `http://localhost:3000/admin/login`
-* Ruta para la suscripción de usuarios: `http://localhost:3000/subscribe_me/index`
-* Ruta para ver los correos electrónicos recibidos por el usuario: `http://localhost:3000/inbox`
-* Ruta para previsualizar el correo de suscripción: `http://localhost:3000/rails/mailers`
-
-## Agregar Traducciones
-
-Si deseas agregar más traducciones a i18n, simplemente debes modificar los archivos de idioma correspondientes. Los archivos de traducción suelen tener extensiones como `.yml` y están ubicados en el directorio `config/locales`.
-
-* Para agregar traducciones en inglés, edita el archivo `en.yml`.
-* Para agregar traducciones en español, edita el archivo `es.yml`.
-
-Por ejemplo, si deseas agregar una traducción para un mensaje en inglés, puedes hacerlo de la siguiente manera en `config/locales/en.yml`:
-
-```
-//config/locales/en.yml
-en:
-  controllers:
-    subscribe_me:
-      email_subscribe_success: "Subscription successful! You are now subscribed."
-
-```
-
-¡Listo! Ahora deberías poder ejecutar y utilizar tu proyecto de Rails siguiendo estos pasos. Asegúrate de seguir las mejores prácticas de seguridad al manejar las credenciales y datos sensibles.
