@@ -1,0 +1,33 @@
+@import 'activeadmin_addons/all';
+//= require select2
+@import "active_admin/mixins";
+
+@import "active_admin/base";
+
+
+
+
+
+$skinActiveColor: #C9D2D7;
+$skinHeaderBck: #617485;
+$panelHeaderBck: #617485;
+$skinHeaderTextColor: white; //header texto
+$red: #cc6510;
+$yellow: #e7d41a;   
+$green: #82b06f;
+
+$listo-color: #C2B066;
+$proceso-color: #EFDEDB;
+$terminado-color: #ECE9E0;
+
+
+$skinTextColor: #617485; //C2B066
+$skinTextActiveColor: #617485;
+$skinTextTable: #7f8c8d;
+$skinFontFamily: 'Source Sans Pro', sans-serif;
+$panelHeaderTextColor: white;
+
+
+$skinLogo:  image-url("logo1.png") no-repeat center center ;
+
+@import "active_skin";

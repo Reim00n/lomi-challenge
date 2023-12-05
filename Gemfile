@@ -72,3 +72,6 @@ gem 'simple_token_authentication', '~> 1.0'
 gem "rails-i18n"
 gem 'premailer-rails'
 gem 'capistrano-systemd-multiservice'
+gem "net-http"
+gem "fast_jsonapi"
+gem "rubocop"
