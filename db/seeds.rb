@@ -28,3 +28,34 @@ product1 = Product.create(name: 'Coca Cola 250', cost: 6500, vat_rate: 10, statu
                           measure: measure2, supplier: supplier1)
 PurchaseDetail.create(quantity: 5, purchase: purchase, product: product1, cost: product1.cost,
                       subtotal: product1.cost * 5)
+
+# Crear una tarjeta usando Faker
+Card.create(
+  name: Faker::Business.credit_card_type,
+  number: Faker::Business.credit_card_number,
+  cvv: Faker::Number.number(digits: 3),
+  card_type: :debit,
+  client_id: cliente1.id
+)
+
+# Crear más clientes con datos aleatorios
+5.times do
+  Client.create(
+    name: Faker::Name.name,
+    ruc: Faker::Company.swedish_organisation_number,
+    business_name: Faker::Company.name
+  )
+end
+
+# Crear más compras con datos aleatorios
+3.times do
+  Purchase.create(
+    invoice_number: Faker::Invoice.reference,
+    date: Faker::Date.backward(days: 365),
+    payment_tipe: :cash,
+    total_amount: Faker::Commerce.price(range: 100..1000),
+    status: :active,
+    client_id: Client.all.sample.id,
+    currency_id: Currency.last.id
+  )
+end

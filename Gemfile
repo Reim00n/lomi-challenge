@@ -75,3 +75,4 @@ gem 'capistrano-systemd-multiservice'
 gem "net-http"
 gem "fast_jsonapi"
 gem "rubocop"
+gem "faker"
